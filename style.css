@@ -1,0 +1,79 @@
+/* BASIC SYNTAX  */
+.first-title {
+  color: red;
+}
+
+#third-title {
+  color: blue;
+}
+
+.empty-link {
+  color: orange;
+}
+
+/* __________________________________________________________________________ */
+
+/* SELECTORS */
+
+.random h1 {
+  color: cornflowerblue;
+}
+
+/*
+* {
+  font-size: 20px;
+}
+*/
+
+.my-list + ul {
+  list-style: none;
+}
+
+.nav-link > li {
+  /* .nav-link li works too */
+  color: fuchsia;
+}
+
+.nav-link a {
+  color: burlywood;
+}
+
+.links li:nth-child(3) /* FOR FIRST SECOND THIRD LI */ {
+  color: blue;
+}
+
+/* __________________________________________________________________________ */
+
+/* MARGIN & PADDING */
+
+.margin button {
+  /* THIS IS FOR PADDING TOP, PADDING RIGHT, PADDING BOTTOM AND PADDING LEFT, IT'S BETTER TO WRITE IT LIKE THIS*/
+  padding: 20px 10px 10px 0px;
+  /* padding: 20px 10px IS FOR TOP TO BOTTOM AND LEFT AND RIGHT */
+  background-color: blueviolet;
+}
+
+/* __________________________________________________________________________ */
+
+/* BOX MODEL */ /* IMPORTANT!!!! */
+
+.box-model {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 20px; /* THIS MAKES SCROLLING ON THE RIGHT SI LOOK THE "*" FIX THAT */
+  margin: 20px 0px 0px 0px;
+}
+
+/* IMPORTANT !!!!!! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* NOW WE CANNOT SCROLLING ANYMORE BECAUSE EVERYTHING THAT
+   WE HAD (PADDING / BORDERS) NOW WILL BE CONTAINED  IN AND WE CAN'T SCROL AGAIN*/
+}
+/* IMPORTANT !!!!!! */
+
+/* __________________________________________________________________________ */
+
+/* PIXEL, REM, EM */
