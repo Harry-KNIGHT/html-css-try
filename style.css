@@ -58,22 +58,21 @@
 /* BOX MODEL */ /* IMPORTANT!!!! */
 
 /*
-.box-model {
+/* .box-model {
   background-color: blue;
   color: white;
   width: 100%;
-  padding: 20px; /* THIS MAKES SCROLLING ON THE RIGHT SI LOOK THE "*" FIX THAT */
-  margin: 20px 0px 0px 0px; 
-}
-
+  padding: 20px; THIS MAKES SCROLLING ON THE RIGHT SI LOOK THE "*" FIX THAT 
+   margin: 20px 0px 0px 0px;  
+} */
 
 /* IMPORTANT !!!!!! */
-/* * {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* NOW WE CANNOT SCROLLING ANYMORE BECAUSE EVERYTHING THAT
-   WE HAD (PADDING / BORDERS) NOW WILL BE CONTAINED  IN AND WE CAN'T SCROL AGAIN*/
-} 
+   WE HAD (PADDING / BORDERS) NOW WILL BE CONTAINED  IN AND WE CAN'T SCROL AGAIN 
+} */
 /* IMPORTANT !!!!!! */
 
 /* __________________________________________________________________________ */
@@ -117,7 +116,6 @@
 .display-types h1 {
   background-color: lightgray;
   height: 5rem;
-  
 }
 
 .display-types a {
@@ -125,5 +123,97 @@
   height: 3rem;
   padding-top: 1rem;
   text-align: center;
+  background: lightseagreen;
+}
+
+/* __________________________________________________________________________ */
+/* __________________________________________________________________________ */
+/* __________________________________________________________________________ */
+
+/* POSITIONS */
+
+html {
+  font-size: 62, 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background: cadetblue;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: relative; /* FOR BOXES STAYING IN THE PARENT DIV */
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 20%;
+  height: 20%;
+  background: crimson;
+}
+
+/* HOW  POSITIONATE PERFECTLY IN THE MIDDLE */
+.box1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box2 {
+  background: pink;
+  transform: translateX(50%);
+  position: absolute;
+  bottom: 0%;
+}
+
+.box3 {
+  background: purple;
+  position: sticky;
+  top: 0%;
+}
+
+.box4 {
+  background: greenyellow;
+  position: fixed; /* MAKE THIS FIXED AND STAY ON THE SCREEN WHILE SCROLLING */
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 9%;
+}
+
+/* __________________________________________________________________________ */
+/* __________________________________________________________________________ */
+/* __________________________________________________________________________ */
+
+/* PSEUDO ELEMENTS AND CLASSES */
+
+.pseudo-element button {
+  padding: 2rem 4rem;
+  cursor: pointer; /* MOUSE CHANGE WITH A FINGER FOR CLICKABLE CURSOR*/
+}
+
+.pseudo-element button:hover {
+  /* HOVER MAKES THE BUTTON LIGHTLY WHEN THE MOUSE GO OVER */
+  background: lightseagreen;
+}
+
+.pseudo-element button:focus {
+  background: lightseagreen;
+}
+
+.pseudo-element input:focus {
   background: lightseagreen;
 }
