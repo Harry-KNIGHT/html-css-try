@@ -57,23 +57,73 @@
 
 /* BOX MODEL */ /* IMPORTANT!!!! */
 
+/*
 .box-model {
   background-color: blue;
   color: white;
   width: 100%;
   padding: 20px; /* THIS MAKES SCROLLING ON THE RIGHT SI LOOK THE "*" FIX THAT */
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 0px 0px; 
 }
 
+
 /* IMPORTANT !!!!!! */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* NOW WE CANNOT SCROLLING ANYMORE BECAUSE EVERYTHING THAT
    WE HAD (PADDING / BORDERS) NOW WILL BE CONTAINED  IN AND WE CAN'T SCROL AGAIN*/
-}
+} 
 /* IMPORTANT !!!!!! */
 
 /* __________________________________________________________________________ */
 
 /* PIXEL, REM, EM */
+
+/* Highly recommanded to use rem for responsive font size */
+
+/* HTML {
+  font-size: 16px;
+} */
+
+.text-section {
+  font-size: 1.5rem; /*1rem = 16px, calculate by example 1,5 for 24px, 2rem for 32px*/
+}
+
+.text-section div {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+/* __________________________________________________________________________ */
+
+/* STYLING BUTTON */
+
+.button-style button {
+  margin: 20rem;
+  padding: 2rem 4rem;
+  background: blue;
+  border: 0.3rem solid blue;
+  color: white;
+  font-size: 2.4rem;
+  border-radius: 1rem; /*FOR MAKE THE EDGES ROUNDED*/
+  /* border-top-left-radius: 2rem;  */
+}
+
+/* __________________________________________________________________________ */
+
+/*  DISPLAY TYPES */
+
+.display-types h1 {
+  background-color: lightgray;
+  height: 5rem;
+  
+}
+
+.display-types a {
+  display: block;
+  height: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+  background: lightseagreen;
+}
