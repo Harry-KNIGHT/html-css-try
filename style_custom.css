@@ -1,0 +1,18 @@
+* {
+  margin: O;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+/* MEDIA QUERIES */
+body {
+  background: lightseagreen;
+}
+
+h1 {
+  font-size: 4.8rem;
+}

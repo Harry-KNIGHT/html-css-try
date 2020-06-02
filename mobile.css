@@ -1,0 +1,8 @@
+@media (max-width: 500px) {
+  body {
+    background: lightpink;
+  }
+  .mobile {
+    font-size: 3rem;
+  }
+}
